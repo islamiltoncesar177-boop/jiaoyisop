@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>交易SOP｜个人投资者标准操作流程</title>
+    <title>越努力越亏钱？撕开3个“知识幻觉” | 常青藤投资 · 交易SOP</title>
     <style>
         * {
             margin: 0;
@@ -12,306 +12,293 @@
         }
 
         body {
-            background: #eef2f5;
-            font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Noto Sans', Helvetica, Arial, sans-serif;
-            line-height: 1.5;
-            color: #1e293b;
+            background-color: #f4f6fa;
+            font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Noto Sans', 'Helvetica Neue', Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #1e2a3e;
             padding: 2rem 1rem;
         }
 
-        .sop-container {
-            max-width: 960px;
+        .container {
+            max-width: 880px;
             margin: 0 auto;
-        }
-
-        /* 主卡片 */
-        .sop-card {
-            background: #ffffff;
+            background: white;
             border-radius: 32px;
             box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            padding: 2rem 1.8rem 3rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.75rem;
+            }
+            .container {
+                padding: 1.5rem 1.2rem 2rem;
+                border-radius: 28px;
+            }
+        }
+
+        /* 版式 */
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            line-height: 1.25;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+
+        .sub {
+            color: #4b5565;
+            font-size: 1rem;
+            border-bottom: 1px solid #e9edf2;
+            padding-bottom: 1rem;
+            margin-bottom: 1.8rem;
+        }
+
+        h2 {
+            font-size: 1.55rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            padding-left: 0;
+            color: #1e293b;
+            border-left: 4px solid #d97706;
+            padding-left: 0.9rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.6rem 0;
+            color: #2c3e50;
+        }
+
+        .pull-quote {
+            background: #fef9e8;
+            border-left: 4px solid #e67e22;
+            padding: 1rem 1.4rem;
+            margin: 1.6rem 0;
+            font-style: normal;
+            font-weight: 500;
+            color: #b45309;
+            border-radius: 12px;
+            font-size: 0.98rem;
+        }
+
+        .highlight-box {
+            background: #eff6ff;
+            border-radius: 20px;
+            padding: 1.4rem 1.6rem;
+            margin: 1.8rem 0;
+            border: 1px solid #dce7f5;
+        }
+
+        .sop-card {
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.12);
+            border: 1px solid #eef2f8;
+            margin: 2rem 0;
             overflow: hidden;
         }
 
         .sop-header {
             background: #0f172a;
-            padding: 1.5rem 2rem;
             color: white;
-        }
-
-        .sop-header h1 {
-            font-size: 1.8rem;
+            padding: 1rem 1.6rem;
             font-weight: 700;
-            letter-spacing: -0.3px;
-            margin-bottom: 0.3rem;
+            font-size: 1.3rem;
+            letter-spacing: -0.2px;
         }
 
-        .sop-header .subhead {
-            font-size: 0.9rem;
-            opacity: 0.75;
-            margin-top: 0.25rem;
-            border-left: 2px solid #d97706;
-            padding-left: 0.75rem;
+        .sop-step {
+            padding: 1.2rem 1.6rem;
+            border-bottom: 1px solid #edf2f7;
         }
 
-        .sop-body {
-            padding: 2rem 2rem 2.2rem;
-        }
-
-        /* 三个核心步骤 */
-        .step-block {
-            margin-bottom: 2.2rem;
-            border-bottom: 1px solid #eef2f8;
-            padding-bottom: 1.8rem;
-        }
-        .step-block:last-child {
+        .sop-step:last-child {
             border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
         }
 
         .step-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-bottom: 1rem;
+            gap: 8px;
+            color: #0f172a;
         }
+
         .step-num {
             background: #d97706;
-            width: 34px;
-            height: 34px;
-            border-radius: 40px;
+            width: 26px;
+            height: 26px;
+            border-radius: 30px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 0.85rem;
+            font-weight: bold;
             color: white;
         }
-        .step-name {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #0f172a;
-            letter-spacing: -0.2px;
-        }
-        .step-desc {
-            color: #4b5563;
-            margin-bottom: 1rem;
-            font-weight: 500;
-        }
 
-        /* 规则卡片 */
-        .rule-card {
+        .checklist {
             background: #f8fafc;
             border-radius: 20px;
             padding: 1.2rem 1.5rem;
-            margin: 1rem 0 0.8rem 0;
-            border-left: 4px solid #d97706;
+            margin: 1rem 0;
+            list-style-type: none;
         }
 
-        .info-list {
-            list-style: none;
-            margin: 0.75rem 0 0.5rem 0;
-        }
-        .info-list li {
-            margin-bottom: 0.7rem;
-            padding-left: 1.6rem;
+        .checklist li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.8rem;
             position: relative;
         }
-        .info-list li::before {
-            content: "•";
+
+        .checklist li::before {
+            content: "✓";
             color: #d97706;
             font-weight: bold;
-            font-size: 1.2rem;
             position: absolute;
-            left: 0.2rem;
-            top: -0.1rem;
-        }
-
-        .checklist-grid {
-            background: #ffffff;
-            border-radius: 20px;
-            border: 1px solid #e2edf7;
-            padding: 1.2rem 1.5rem;
-            margin: 0.8rem 0;
-        }
-        .checklist-item {
-            margin-bottom: 1rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px dashed #e9edf2;
-        }
-        .checklist-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        .checklist-question {
-            font-weight: 700;
-            color: #0c4e6e;
-            margin-bottom: 0.25rem;
-        }
-        .checklist-note {
-            font-size: 0.9rem;
-            color: #475569;
-            padding-left: 0.5rem;
-            border-left: 2px solid #f1c40f;
-            margin-top: 4px;
-        }
-
-        .highlight-rule {
-            background: #fef9e8;
-            border-radius: 16px;
-            padding: 0.9rem 1.2rem;
-            margin: 1rem 0;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #b45309;
-            border: 1px solid #ffe6c2;
-        }
-
-        .footer-note {
-            margin-top: 2rem;
-            background: #f1f5f9;
-            border-radius: 20px;
-            padding: 1rem 1.5rem;
-            font-size: 0.8rem;
-            text-align: center;
-            color: #334155;
+            left: 0;
         }
 
         hr {
-            margin: 0.5rem 0 1rem;
+            margin: 2rem 0;
             border: none;
             height: 1px;
-            background: #e2e8f0;
+            background: linear-gradient(to right, #e2e8f0, transparent);
         }
 
-        @media (max-width: 640px) {
-            .sop-body {
-                padding: 1.5rem;
+        .footer-note {
+            background: #f1f5f9;
+            border-radius: 24px;
+            padding: 1.5rem;
+            margin-top: 2.2rem;
+            font-size: 0.9rem;
+            color: #334155;
+            text-align: center;
+        }
+
+        .callout {
+            font-weight: 600;
+            background: #fef3c7;
+            padding: 0.3rem 0.6rem;
+            border-radius: 12px;
+            display: inline-block;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 1.6rem;
             }
-            .step-name {
-                font-size: 1.3rem;
+            h2 {
+                font-size: 1.35rem;
             }
-            .sop-header h1 {
-                font-size: 1.5rem;
+            .container {
+                padding: 1.2rem;
             }
         }
     </style>
 </head>
 <body>
-<div class="sop-container">
+<div class="container">
+    <h1>越努力越亏钱？<br>撕开3个贼扎心的“知识幻觉”</h1>
+    <div class="sub">捕捉尚未定价的机会与风险 · 用耐心、理性和克制慢慢变富</div>
+    
+    <p>你有没有这样的感觉？每天早上醒来，微信里有十几个群在刷屏，知识星球更新八条，播客又出新三期，雪球首页20篇深度分析，抖音大V喊“别错过科技行情”……每天花两三个小时学习，月底一看账户——又亏了。更气人的是，群里那个问PE倍数的萌新都晒盈利了，唯独你还在亏。</p>
+    
+    <p>今天我要告诉你一个略扎心的真相：<strong>有些人亏钱，恰恰是因为“学的东西太多了”</strong>。信息过载，尤其是低质量信息，会让你陷入<strong>“知识幻觉”</strong>——你以为懂了，其实只是知道了一堆噪音。</p>
+    
+    <div class="pull-quote">
+        📌 哥伦比亚大学研究：当你可以轻松获取大量信息时，会高估自己对事物的理解深度 → 知识幻觉 (Knowledge Illusion)。信息爆炸时代，稀缺的不是信息本身，而是<strong>筛选优质信息的能力</strong>。
+    </div>
+    
+    <h2>一、三个心理陷阱：为什么听播客也可能亏钱？</h2>
+    <h3>🎯 陷阱1：证实性偏差</h3>
+    <p>你买了什么，就只找“说它好”的内容。买了AI芯片股，就狂刷看多分析；遇到看空文章，直接划走甚至嘲讽。大脑节能机制让你只寻找认同，而不是真正学习。</p>
+    
+    <h3>⚡ 陷阱2：行动偏差</h3>
+    <p>波动时焦虑，焦虑时本能想“做点什么”——调仓、止损、换标的。美国行为金融学家奥丁发现：换手率每提高一个档次，年化收益率下降2~3%。操作越频繁，亏得越多。</p>
+    
+    <h3>📖 陷阱3：叙事谬误</h3>
+    <p>人类天生爱故事。AI革命、第四次工业革命……迷人的叙事让你热血沸腾。但当一个故事太完美时，往往已经反映在价格里（聪明钱提前建仓）。你要问自己：这个故事是否有人比你更早相信？</p>
+    
+    <h2>二、方法论：认知减法框架（可执行SOP）</h2>
+    <p>既然问题诊断清楚，下面给一套<strong>“做减法”的操作流程</strong>。帮你从信息淹没中抽身，建立决策纪律。</p>
+    
+    <!-- 交易SOP卡片 -->
     <div class="sop-card">
-        <div class="sop-header">
-            <h1>📋 交易SOP</h1>
-            <div class="subhead">个人投资者标准操作流程 · 从信息过载到纪律决策</div>
+        <div class="sop-header">📋 个人投资者交易SOP · 标准操作流程</div>
+        <div class="sop-step">
+            <div class="step-title"><span class="step-num">1</span> 信息输入 · 砍到3个以内</div>
+            <p>❌ 砍掉：短视频、群聊刷屏、首页推荐、喊单大V。<br>
+            ✅ 保留三个来源：</p>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li><strong>① 系统知识</strong>：一本书或系统课程（如《金钱心理学》、塔勒布四部曲），打牢地基。</li>
+                <li><strong>② 高质量聚合</strong>：可信研报/财经摘要（仅一个渠道）。</li>
+                <li><strong>③ 情绪窗口</strong>：1~2个靠谱播客+评论区，感受市场贪婪/恐惧，不抄作业。</li>
+            </ul>
+            <div class="callout" style="margin-top: 8px;">🔻 核心：信息越少，信号越强</div>
         </div>
-        <div class="sop-body">
-            <!-- 步骤1: 信息输入 -->
-            <div class="step-block">
-                <div class="step-title">
-                    <span class="step-num">1</span>
-                    <span class="step-name">信息输入 · 做减法</span>
-                </div>
-                <div class="step-desc">将信息来源压缩到 <strong>3个以内</strong>，砍掉噪音与碎片化内容。</div>
-                <div class="rule-card">
-                    <div style="font-weight: 700; margin-bottom: 8px;">✂️ 砍掉这些：</div>
-                    <ul class="info-list">
-                        <li>短视频、抖音大V喊单</li>
-                        <li>微信群/听友群刷屏讨论</li>
-                        <li>雪球首页推荐、零散播客单集（非系统）</li>
-                        <li>碎片化的K线技术指标、主力资金流向</li>
-                    </ul>
-                    <div style="font-weight: 700; margin: 12px 0 6px 0;">✅ 只保留三个来源：</div>
-                    <ul class="info-list">
-                        <li><strong>① 系统性知识（1个）</strong> — 一本完整的投资书籍或系统课程<br>
-                        <span style="font-size: 0.85rem; color: #5b6e8c;">例：《金钱心理学》、塔勒布四部曲。打牢认知地基，不搞碎片装修。</span></li>
-                        <li><strong>② 高质量信息聚合渠道（1个）</strong> — 可信的买方研报/财经摘要<br>
-                        <span style="font-size: 0.85rem; color: #5b6e8c;">例：财联社电报解读（仅一个渠道，不叠加）。</span></li>
-                        <li><strong>③ 市场情绪观察窗口（1个）</strong> — 1-2个靠谱播客及评论区<br>
-                        <span style="font-size: 0.85rem; color: #5b6e8c;">作用：感受市场贪婪/恐惧，不用于获取具体操作建议。</span></li>
-                    </ul>
-                    <div class="highlight-rule" style="margin-top: 10px;">
-                        💡 核心原则：信息越少，信号越强。真正的信息差，是你选择忽略什么噪音。
-                    </div>
-                </div>
-            </div>
-
-            <!-- 步骤2: 决策检查清单 -->
-            <div class="step-block">
-                <div class="step-title">
-                    <span class="step-num">2</span>
-                    <span class="step-name">决策检查清单 · 铁律对抗情绪</span>
-                </div>
-                <div class="step-desc">每次下单前，必须用一张A4纸写下以下<strong>4个问题</strong>的答案，<strong>放一晚上</strong>再复核。</div>
-                <div class="checklist-grid">
-                    <div class="checklist-item">
-                        <div class="checklist-question">📌 1. 买入逻辑是什么？</div>
-                        <div>要求：<strong>一句话说清楚</strong>，并能解释给8岁孩子或80岁老人听。<br>
-                        <span class="checklist-note">⚠️ 若说不清 → 不买。</span></div>
-                    </div>
-                    <div class="checklist-item">
-                        <div class="checklist-question">📌 2. 前提条件是什么？</div>
-                        <div>例：“如果美联储继续降息，黄金涨。”<br>反问：若前提不成立（如加息/维持利率），逻辑还成立吗？</div>
-                    </div>
-                    <div class="checklist-item">
-                        <div class="checklist-question">📌 3. 准备持有多久？</div>
-                        <div>1个月 / 1年 / 3年 —— 不同时间尺度对应完全不同的买入策略。</div>
-                    </div>
-                    <div class="checklist-item">
-                        <div class="checklist-question">📌 4. 什么情况下认错退出？</div>
-                        <div>明确止损线 / 止盈点（具体点位）。<br>
-                        <span class="checklist-note">🚫 没有退出计划 → 一律视为赌博。</span></div>
-                    </div>
-                </div>
-                <div class="highlight-rule">
-                    ⏱ 关键动作：写完四个问题 → 把A4纸放一晚上 → 第二天早上重读一遍。<br>
-                    若逻辑依然通畅，再下单。没有一只标的会在一天内涨完所有涨幅。<br>
-                    <strong>✅ 5分钟过滤80%冲动交易。</strong>
-                </div>
-            </div>
-
-            <!-- 步骤3: 复盘笔记 -->
-            <div class="step-block">
-                <div class="step-title">
-                    <span class="step-num">3</span>
-                    <span class="step-name">复盘笔记 · 而非囤积信息</span>
-                </div>
-                <div class="step-desc">真正的学习标志是<strong>行为被改变</strong>。不记录“看了什么”，只记录<strong>决策与结果</strong>。</div>
-                <div class="rule-card">
-                    <div style="font-weight: 700; margin-bottom: 10px;">📆 每周15分钟，只做一件事：</div>
-                    <ul class="info-list">
-                        <li>我做了什么决策？（买入/卖出/持有/不操作 —— 不操作也是决策）</li>
-                        <li>决策结果如何？（盈利/亏损/平盘）</li>
-                        <li>如果让我再来一次，我会怎么做？</li>
-                    </ul>
-                    <div class="highlight-rule" style="margin-top: 12px;">
-                        📌 你的亏损记录，比任何大V的分析都能教会你更多。<br>
-                        不做“收藏截图、囤积文章”的自我安慰，只复盘操作与结果。
-                    </div>
-                </div>
-            </div>
-
-            <!-- 附加：终极自检 + 核心总结 -->
-            <hr>
-            <div style="background: #fefce8; border-radius: 20px; padding: 1.2rem 1.5rem; margin-top: 0.8rem;">
-                <p style="font-weight: 800; margin-bottom: 0.5rem;">🔍 终极自检问题（源自原文）</p>
-                <p>打印你过去两年的交易记录，把每一笔亏损标红。<br>
-                <strong>问自己两个问题：</strong><br>
-                ① 我当时做这个决策，是因为看到了什么信息？<br>
-                ② 这个信息今天我还应该相信吗？<br>
-                <span style="font-size: 0.85rem; color: #92400e;">—— 这就是你的认知地图，全世界只有你能绘制。</span></p>
-            </div>
-
-            <div style="background: #0f172a; color: white; border-radius: 24px; padding: 1.2rem 1.5rem; margin: 1.8rem 0 0.5rem 0; text-align: center;">
-                <p style="font-weight: 600; letter-spacing: -0.2px;">⚡ 交易SOP 一句话总结</p>
-                <p style="font-size: 0.95rem; margin-top: 6px;">砍信息来源 → 写4问清单 → 隔夜再决定 → 只复盘操作，不囤积信息。</p>
-                <p style="font-size: 0.8rem; margin-top: 8px; opacity: 0.7;">“真正的信息差，是你能够选择忽略什么噪音。”</p>
-            </div>
-
-            <div class="footer-note">
-                ⚠️ 本SOP基于《越努力越亏钱？撕开3个贼扎心的“知识幻觉”》内容提炼，仅供个人投资者纪律参考，不构成任何投资建议。市场有风险，决策需谨慎。
-            </div>
+        <div class="sop-step">
+            <div class="step-title"><span class="step-num">2</span> 决策检查清单 · 铁律对抗情绪</div>
+            <p><strong>下单前必须写在一张A4纸上，回答4个问题：</strong></p>
+            <ul class="checklist">
+                <li><strong>买入逻辑是什么？</strong> 一句话说清楚，并能解释给8岁孩子或80岁老人听。说不清 → 不买。</li>
+                <li><strong>前提条件是什么？</strong> 例如“如果美联储继续降息，黄金涨”。若前提不成立，逻辑还成立吗？</li>
+                <li><strong>准备持有多久？</strong> 1个月 / 1年 / 3年，不同尺度对应不同策略。</li>
+                <li><strong>什么情况认错退出？</strong> 明确止损线/止盈点位。无退出计划 → 视为赌博。</li>
+            </ul>
+            <p><strong>✍️ 关键动作：</strong> 写完后<strong>放一晚上</strong>，第二天再读一遍。逻辑通畅再下单。⏱ 5分钟过滤80%冲动交易。</p>
         </div>
+        <div class="sop-step">
+            <div class="step-title"><span class="step-num">3</span> 复盘笔记 · 而非囤积信息</div>
+            <p>每周花15分钟，只记录<strong>决策与结果</strong>，而不是你看了什么、听了什么：</p>
+            <ul style="margin-left: 1.5rem;">
+                <li>我做了什么决策？（买入/卖出/持有/不操作）</li>
+                <li>结果如何？（盈亏）</li>
+                <li>如果再来一次，我会怎么做？</li>
+            </ul>
+            <p>📌 你的亏损记录，比任何大V的分析都更能教会你。<strong>真正的学习只有一个标志：你的行为被改变了。</strong></p>
+        </div>
+    </div>
+    
+    <div class="highlight-box">
+        <strong>🧠 终极自检（来自原文）：</strong><br>
+        打印过去两年的交易记录，把每一笔亏损标红。<br>
+        问自己：“我当时做这个决策，是因为看到了什么信息？这个信息今天我还应该相信吗？”<br>
+        这就是你独有的<strong>认知地图</strong>，全世界只有你能绘制。
+    </div>
+    
+    <h2>三、真正的“信息差”：选择忽略什么</h2>
+    <p>CFA协会分析2024-2025年表现最好的投资机构，共同点不是信息源更多，而是<strong>果断筛选信息、提出更精准的问题、嵌入严谨的工作流</strong>。对99%的个人投资者而言，真正的信息差不是比别人早知道内幕，而是——<strong>你能够选择忽略噪音</strong>。</p>
+    
+    <p>巴菲特办公室没有彭博终端，没有电脑，只有年报和书。“股票市场被设计成金钱从活跃的人手里转移到耐心的人手里。”你每天刷的K线、主力资金流向、KDJ指标，绝大多数只是让你觉得自己很努力，然后交出筹码。</p>
+    
+    <div class="pull-quote">
+        💡 你当下成本最低、回报最高的操作：<strong>砍掉90%的信息源，严格执行决策清单，只复盘自己的操作</strong>。这才是“越努力越亏钱”的唯一解药。
+    </div>
+    
+    <hr>
+    
+    <!-- 额外提炼SOP精简卡片，方便回顾 -->
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 24px; padding: 1.2rem 1.5rem; margin: 0.5rem 0 1rem 0;">
+        <p style="font-weight: 800; margin-bottom: 0.5rem;">⚡ 交易SOP 极简速查卡</p>
+        <p>🔹 <strong>输入</strong>：知识来源 ≤ 3个（书1本+摘要1个+情绪窗口1个）<br>
+        🔹 <strong>检查</strong>：4问清单 → 隔夜冷静 → 逻辑通再下单<br>
+        🔹 <strong>复盘</strong>：每周15分钟，只记决策&结果，不囤截图<br>
+        🔹 <strong>戒律</strong>：无退出计划=赌博，一句话说不清=不买</p>
+        <div style="margin-top: 12px; font-size: 0.85rem; color: #b45309;">“真正的信息差，是你选择忽略什么噪音。”</div>
+    </div>
+    
+    <div class="footer-note">
+        📢 风险提示：只讲数据逻辑和模型，不构成任何投资建议。市场有风险，决策需谨慎。
     </div>
 </div>
 </body>
