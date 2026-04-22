@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>交易SOP｜个人投资者标准操作流程</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #eef2f5;
+            font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1e293b;
+            padding: 2rem 1rem;
+        }
+
+        .sop-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* 主卡片 */
+        .sop-card {
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .sop-header {
+            background: #0f172a;
+            padding: 1.5rem 2rem;
+            color: white;
+        }
+
+        .sop-header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.3rem;
+        }
+
+        .sop-header .subhead {
+            font-size: 0.9rem;
+            opacity: 0.75;
+            margin-top: 0.25rem;
+            border-left: 2px solid #d97706;
+            padding-left: 0.75rem;
+        }
+
+        .sop-body {
+            padding: 2rem 2rem 2.2rem;
+        }
+
+        /* 三个核心步骤 */
+        .step-block {
+            margin-bottom: 2.2rem;
+            border-bottom: 1px solid #eef2f8;
+            padding-bottom: 1.8rem;
+        }
+        .step-block:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .step-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1rem;
+        }
+        .step-num {
+            background: #d97706;
+            width: 34px;
+            height: 34px;
+            border-radius: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: white;
+        }
+        .step-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0f172a;
+            letter-spacing: -0.2px;
+        }
+        .step-desc {
+            color: #4b5563;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        /* 规则卡片 */
+        .rule-card {
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 1.2rem 1.5rem;
+            margin: 1rem 0 0.8rem 0;
+            border-left: 4px solid #d97706;
+        }
+
+        .info-list {
+            list-style: none;
+            margin: 0.75rem 0 0.5rem 0;
+        }
+        .info-list li {
+            margin-bottom: 0.7rem;
+            padding-left: 1.6rem;
+            position: relative;
+        }
+        .info-list li::before {
+            content: "•";
+            color: #d97706;
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0.2rem;
+            top: -0.1rem;
+        }
+
+        .checklist-grid {
+            background: #ffffff;
+            border-radius: 20px;
+            border: 1px solid #e2edf7;
+            padding: 1.2rem 1.5rem;
+            margin: 0.8rem 0;
+        }
+        .checklist-item {
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px dashed #e9edf2;
+        }
+        .checklist-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .checklist-question {
+            font-weight: 700;
+            color: #0c4e6e;
+            margin-bottom: 0.25rem;
+        }
+        .checklist-note {
+            font-size: 0.9rem;
+            color: #475569;
+            padding-left: 0.5rem;
+            border-left: 2px solid #f1c40f;
+            margin-top: 4px;
+        }
+
+        .highlight-rule {
+            background: #fef9e8;
+            border-radius: 16px;
+            padding: 0.9rem 1.2rem;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #b45309;
+            border: 1px solid #ffe6c2;
+        }
+
+        .footer-note {
+            margin-top: 2rem;
+            background: #f1f5f9;
+            border-radius: 20px;
+            padding: 1rem 1.5rem;
+            font-size: 0.8rem;
+            text-align: center;
+            color: #334155;
+        }
+
+        hr {
+            margin: 0.5rem 0 1rem;
+            border: none;
+            height: 1px;
+            background: #e2e8f0;
+        }
+
+        @media (max-width: 640px) {
+            .sop-body {
+                padding: 1.5rem;
+            }
+            .step-name {
+                font-size: 1.3rem;
+            }
+            .sop-header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="sop-container">
+    <div class="sop-card">
+        <div class="sop-header">
+            <h1>📋 交易SOP</h1>
+            <div class="subhead">个人投资者标准操作流程 · 从信息过载到纪律决策</div>
+        </div>
+        <div class="sop-body">
+            <!-- 步骤1: 信息输入 -->
+            <div class="step-block">
+                <div class="step-title">
+                    <span class="step-num">1</span>
+                    <span class="step-name">信息输入 · 做减法</span>
+                </div>
+                <div class="step-desc">将信息来源压缩到 <strong>3个以内</strong>，砍掉噪音与碎片化内容。</div>
+                <div class="rule-card">
+                    <div style="font-weight: 700; margin-bottom: 8px;">✂️ 砍掉这些：</div>
+                    <ul class="info-list">
+                        <li>短视频、抖音大V喊单</li>
+                        <li>微信群/听友群刷屏讨论</li>
+                        <li>雪球首页推荐、零散播客单集（非系统）</li>
+                        <li>碎片化的K线技术指标、主力资金流向</li>
+                    </ul>
+                    <div style="font-weight: 700; margin: 12px 0 6px 0;">✅ 只保留三个来源：</div>
+                    <ul class="info-list">
+                        <li><strong>① 系统性知识（1个）</strong> — 一本完整的投资书籍或系统课程<br>
+                        <span style="font-size: 0.85rem; color: #5b6e8c;">例：《金钱心理学》、塔勒布四部曲。打牢认知地基，不搞碎片装修。</span></li>
+                        <li><strong>② 高质量信息聚合渠道（1个）</strong> — 可信的买方研报/财经摘要<br>
+                        <span style="font-size: 0.85rem; color: #5b6e8c;">例：财联社电报解读（仅一个渠道，不叠加）。</span></li>
+                        <li><strong>③ 市场情绪观察窗口（1个）</strong> — 1-2个靠谱播客及评论区<br>
+                        <span style="font-size: 0.85rem; color: #5b6e8c;">作用：感受市场贪婪/恐惧，不用于获取具体操作建议。</span></li>
+                    </ul>
+                    <div class="highlight-rule" style="margin-top: 10px;">
+                        💡 核心原则：信息越少，信号越强。真正的信息差，是你选择忽略什么噪音。
+                    </div>
+                </div>
+            </div>
+
+            <!-- 步骤2: 决策检查清单 -->
+            <div class="step-block">
+                <div class="step-title">
+                    <span class="step-num">2</span>
+                    <span class="step-name">决策检查清单 · 铁律对抗情绪</span>
+                </div>
+                <div class="step-desc">每次下单前，必须用一张A4纸写下以下<strong>4个问题</strong>的答案，<strong>放一晚上</strong>再复核。</div>
+                <div class="checklist-grid">
+                    <div class="checklist-item">
+                        <div class="checklist-question">📌 1. 买入逻辑是什么？</div>
+                        <div>要求：<strong>一句话说清楚</strong>，并能解释给8岁孩子或80岁老人听。<br>
+                        <span class="checklist-note">⚠️ 若说不清 → 不买。</span></div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-question">📌 2. 前提条件是什么？</div>
+                        <div>例：“如果美联储继续降息，黄金涨。”<br>反问：若前提不成立（如加息/维持利率），逻辑还成立吗？</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-question">📌 3. 准备持有多久？</div>
+                        <div>1个月 / 1年 / 3年 —— 不同时间尺度对应完全不同的买入策略。</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-question">📌 4. 什么情况下认错退出？</div>
+                        <div>明确止损线 / 止盈点（具体点位）。<br>
+                        <span class="checklist-note">🚫 没有退出计划 → 一律视为赌博。</span></div>
+                    </div>
+                </div>
+                <div class="highlight-rule">
+                    ⏱ 关键动作：写完四个问题 → 把A4纸放一晚上 → 第二天早上重读一遍。<br>
+                    若逻辑依然通畅，再下单。没有一只标的会在一天内涨完所有涨幅。<br>
+                    <strong>✅ 5分钟过滤80%冲动交易。</strong>
+                </div>
+            </div>
+
+            <!-- 步骤3: 复盘笔记 -->
+            <div class="step-block">
+                <div class="step-title">
+                    <span class="step-num">3</span>
+                    <span class="step-name">复盘笔记 · 而非囤积信息</span>
+                </div>
+                <div class="step-desc">真正的学习标志是<strong>行为被改变</strong>。不记录“看了什么”，只记录<strong>决策与结果</strong>。</div>
+                <div class="rule-card">
+                    <div style="font-weight: 700; margin-bottom: 10px;">📆 每周15分钟，只做一件事：</div>
+                    <ul class="info-list">
+                        <li>我做了什么决策？（买入/卖出/持有/不操作 —— 不操作也是决策）</li>
+                        <li>决策结果如何？（盈利/亏损/平盘）</li>
+                        <li>如果让我再来一次，我会怎么做？</li>
+                    </ul>
+                    <div class="highlight-rule" style="margin-top: 12px;">
+                        📌 你的亏损记录，比任何大V的分析都能教会你更多。<br>
+                        不做“收藏截图、囤积文章”的自我安慰，只复盘操作与结果。
+                    </div>
+                </div>
+            </div>
+
+            <!-- 附加：终极自检 + 核心总结 -->
+            <hr>
+            <div style="background: #fefce8; border-radius: 20px; padding: 1.2rem 1.5rem; margin-top: 0.8rem;">
+                <p style="font-weight: 800; margin-bottom: 0.5rem;">🔍 终极自检问题（源自原文）</p>
+                <p>打印你过去两年的交易记录，把每一笔亏损标红。<br>
+                <strong>问自己两个问题：</strong><br>
+                ① 我当时做这个决策，是因为看到了什么信息？<br>
+                ② 这个信息今天我还应该相信吗？<br>
+                <span style="font-size: 0.85rem; color: #92400e;">—— 这就是你的认知地图，全世界只有你能绘制。</span></p>
+            </div>
+
+            <div style="background: #0f172a; color: white; border-radius: 24px; padding: 1.2rem 1.5rem; margin: 1.8rem 0 0.5rem 0; text-align: center;">
+                <p style="font-weight: 600; letter-spacing: -0.2px;">⚡ 交易SOP 一句话总结</p>
+                <p style="font-size: 0.95rem; margin-top: 6px;">砍信息来源 → 写4问清单 → 隔夜再决定 → 只复盘操作，不囤积信息。</p>
+                <p style="font-size: 0.8rem; margin-top: 8px; opacity: 0.7;">“真正的信息差，是你能够选择忽略什么噪音。”</p>
+            </div>
+
+            <div class="footer-note">
+                ⚠️ 本SOP基于《越努力越亏钱？撕开3个贼扎心的“知识幻觉”》内容提炼，仅供个人投资者纪律参考，不构成任何投资建议。市场有风险，决策需谨慎。
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
